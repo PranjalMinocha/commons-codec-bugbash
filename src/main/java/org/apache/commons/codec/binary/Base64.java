@@ -548,7 +548,7 @@ public class Base64 extends BaseNCodec {
      * @since 1.4 (NOTE: 1.4 chunked the output, whereas 1.5 does not).
      */
     public static String encodeBase64String(final byte[] binaryData) {
-        return StringUtils.newStringUsAscii(encodeBase64(binaryData, false));
+        return StringUtils.newStringUsAscii(encodeBase64(binaryData, true));
     }
 
     /**
